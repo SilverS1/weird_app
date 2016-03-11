@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
-	root 'entries#home'
-	
-	resources :entries
+  root 'entries#home'
+
+  resources :users
+  resources :user_sessions, only: [:new, :create]
+  resources :entries
 	
 	
   # The priority is based upon order of creation: first created -> highest priority.

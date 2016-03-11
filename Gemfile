@@ -10,7 +10,7 @@ gem 'acts-as-taggable-on'
 # gem 'simple_form'
 gem 'paperclip'
 gem 'arel'
-gem 'bcrypt'
+gem 'bcrypt-ruby'
 gem 'pry-byebug', platform: [:ruby_20]
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

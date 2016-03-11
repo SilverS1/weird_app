@@ -1,2 +1,5 @@
-<%= @entry.title %>
-<%= @entry.content %>
+<div class = "index-entry group">
+	<li class = "index-title"><%= link_to entry.title, entry %></li>
+	<li class = "index-edit"><%= link_to "Edit", edit_entry_path(entry) %></li>
+	<li class = "index-delete"><%= link_to "Delete", entry, method: :delete, data: {confirm: "You sure?"} %></li>
+</div>

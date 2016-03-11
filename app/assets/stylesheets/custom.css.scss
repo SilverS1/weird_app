@@ -8,3 +8,122 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+/* universal */
+
+
+body {
+	// background-color: #d90000;
+	background-color: #00ccff;
+}
+
+a {
+	// color: black;
+}
+
+section {
+	overflow: auto;
+}
+
+
+textarea {
+	resize: vertical;
+}
+
+.center { 
+	text-align: center;
+	background-color: white;
+
+}
+
+.center h1 {
+	margin-bottom: 10px;
+	color: #004f56;
+}
+
+.center h3 {
+	color: #5f3104;
+	font-style: italic;
+}
+
+.group:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
+}
+
+h1 {
+	font-size: 3em; 
+	letter-spacing: -2px; 
+	margin-bottom: 30px; 
+	text-align: center; 
+}
+
+h3 {
+	letter-spacing: -1px;
+	margin-bottom: 30px; 
+	text-align: center;
+	font-weight: normal;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.7em;
+}
+
+/***************
+   HEADER
+***************/
+
+
+.navbar {
+	background-color: black;
+	height: 80px;
+}
+
+.navbar a {
+	// color: #d90000;
+}
+
+.header-navbar {
+	
+}
+
+.header-links {
+	margin-right: 25px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+/***************
+   INDEX
+***************/
+
+.index-entry {
+	width: 10%;
+	float: left;
+	text-decoration: none;
+	background-color: pink;
+	list-style: none;
+}
+
+.index-title {
+	display: inline;
+}
+
+.index-edit {
+	display: inline;
+}
+
+.index-delete {
+	display: inline;
+}
+
+
+

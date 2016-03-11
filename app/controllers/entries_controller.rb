@@ -1,10 +1,15 @@
 class EntriesController < ApplicationController
+	before_action :require_user
 
 	def home
 	end
 	
 	def new
 		@entry = Entry.new
+	end
+	
+	def index
+		@entries = Entry.all.paginate(:per_page => 12, :page => params[:page])
 	end
 	
 	def create
@@ -29,8 +34,13 @@ class EntriesController < ApplicationController
 		end
 	end
 	
+	def show
+		@entry = Entry.find(params[:id])
+	end
+	
 	def destroy
 		@entry = Entry.find(params[:id]).destroy
+		redirect_to index_url
 	end
 	
 	private 
